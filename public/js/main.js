@@ -175,6 +175,27 @@
 
 	};
 
+	var nestedDropdown = function() {
+
+		$('.has-nested-dropdown').mouseenter(function(){
+
+			var $this = $(this);
+			$this
+				.find('.nested-dropdown')
+				.css('display', 'block')
+				.addClass('animated-fast fadeInUpMenu');
+
+		}).mouseleave(function(){
+			var $this = $(this);
+
+			$this
+				.find('.nested-dropdown')
+				.css('display', 'none')
+				.removeClass('animated-fast fadeInUpMenu');
+		});
+
+	};
+
 
 	var goToTop = function() {
 
@@ -290,6 +311,7 @@
 		contentWayPoint();
 		sliderMain();
 		dropdown();
+		nestedDropdown();
 		goToTop();
 		loaderPage();
 		counterWayPoint();
