@@ -24,7 +24,6 @@ app.get('/', function (req, res) {
 // POST route from contact form
 app.post('/contactForm', function (req, res) {
   let mailOpts, smtpTrans;
-  console.log(req.body.subject)
   smtpTrans = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 465,
@@ -38,7 +37,7 @@ app.post('/contactForm', function (req, res) {
     from: req.body.name + ' &lt;' + req.body.email + '&gt;',
     to: process.env.EMAIL,
     subject: req.body.subject,
-    text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
+    text: `${req.body.fname} ${req.body.lname} (${req.body.email}) says:\n${req.body.message}`
   };
   smtpTrans.sendMail(mailOpts, function (error, response) {
     if (error) {
