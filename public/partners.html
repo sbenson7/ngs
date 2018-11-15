@@ -40,6 +40,7 @@
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
 	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 
@@ -70,70 +71,64 @@
 	<div id="page">
 	<nav class="fh5co-nav" role="navigation">
 		<div class="top-menu">
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row">
-					<div class="col-xs-2">
-						<div id="fh5co-logo"><a href="index.html">Law<span>.</span></a></div>
+					<div class="col-md-2"></div>
+					<div class="col-md-2">
+						<a href="index.html"><img class='logo' src="images/NGS-logo.png" alt="Nicoletti Gonson Spinner logo"></a>
 					</div>
-					<div class="col-xs-10 text-right menu-1">
+					<div class="col-md-8 text-right menu-1">
 						<ul>
-							<li><a href="index.html">Home</a></li>
+							<li class="active"><a href="index.html">Home</a></li>
 							<li><a href="firmOverview.html">Firm Overview</a></li>
-							<li class="has-dropdown">
-								<a href="practice.html">Practice Areas</a>
-								<ul class="dropdown">
-								    <li><a href="construction.html">Construction</a></li>
-								    <li><a href="insuranceCoverage.html">Insurance Coverage</a></li>
-								    <li><a href="massTortEnvironmental.html">Mass Tort & Environmental Claims</a></li>
-								    <li><a href="medicalMalpractice.html">Medical Malpractice</a></li>
-								    <li><a href="premisesLiability.html">Premises Liabitity</a></li>
-								    <li><a href="productsLiability.html">Products Liability</a></li>
-								    <li><a href="professionalIndemnity.html">Professional Indemnity</a></li>
-								    <li><a href="propertyInsurace.html">Property Insurance</a></li>
-								    <li><a href="reinsurance.html">Reinsurance</a></li>
-								    <li><a href="truckingAutoAccidents.html">Trucking & Auto Accidents</a></li>
-								</ul>
-							</li>
-							<li class="active has-dropdown">
-								<a href="attorneyProfiles.html">Attorney Profiles</a>
-								<ul class="dropdown">
-								    <li class="has-nested-dropdown">
-								    	<a href="partners.html">Partners</a>
-										<ul class="nested-dropdown">
-									        <li><a href="frankNicoletti.html">Frank M. Nicoletti</a></li>
-									        <li><a href="benjaminGonson.html">Benjamin N. Gonson</a></li>
-									        <li><a href="marinaSpinner.html">Marina A. Spinner</a></li>
-									        <li><a href="josephGulino.html">Joseph J. Gulino</a></li>
-									        <li><a href="kevinRyan.html">Kevin M. Ryan</a></li>
-									        <li><a href="kevinPinter.html">Kevin Pinter</a></li>
-									        <li><a href="garyGreenman.html">Gary R. Greenman</a></li>
-									        <li><a href="michaelBrown.html">Michael S. Brown</a></li>
-									        <li><a href="edwardBenson.html">Edward S. Benson</a></li>
-									        <li><a href="angelaLainhart.html">Angela A. Lainhart</a></li>
-									        <li><a href="lauraMattera.html">Laura M. Mattera</a></li>
-									    </ul>
-									</li>
-								    <li class="has-nested-dropdown">
-										<a  href="#">Associates</a>
-										<ul class="nested-dropdown">
-									        <li><a href="jasonGomes.html">Jason I. Gomes</a></li>
-									        <li><a href="rachelLipkis.html">Rachel K. Lipkis</a></li>
-									        <li><a href="kevinLocke.html">Kevin S. Locke</a></li>
-									        <li><a href="valerieRivera.html">Valerie Rivera</a></li>
-									        <li><a href="christineVetter.html">Christine Vetter</a></li>
-									        <li><a href="angieKhawly.html">Angie Khawly</a></li>
-									        <li><a href="michealKesselman.html">Michael Kesselman</a></li>
-									        <li><a href="costasCyprus.html">Costas Cyprus</a></li>
-									        <li><a href="craigLamster.html">Craig A. Lamster</a></li>
-									        <li><a href="sarahRocco.html">Sarah Rocco</a></li>
-									        <li><a href="matthewCorcoran.html">Matthew G. Corcoran</a></li>
-									        <li><a href="andrewKoenig.html">Andrew S. Koenig</a></li>
-									        <li><a href="nishiRajan.html">Nishi Rajan</a></li>
-									        <li><a href="danielaBartolo.html">Daniela Bartolo</a></li>
-								    	</ul>
-								    </li>
-								</ul>
-							</li>
+					        <li><a class="drop" href="practice.html">Practice Areas</a>
+					          <ul>
+					            <li><a href="construction.html">Construction</a></li>
+					            <li><a href="insuranceCoverage.html">Insurance Coverage</a></li>
+					            <li><a href="massTortEnvironmental.html">Mass Tort & Environmental Claims</a></li>
+					            <li><a href="medicalMalpractice.html">Medical Malpractice</a></li>
+					            <li><a href="premisesLiability.html">Premises Liabitity</a></li>
+					            <li><a href="productsLiability.html">Products Liability</a></li>
+					            <li><a href="professionalIndemnity.html">Professional Indemnity</a></li>
+					            <li><a href="propertyInsurace.html">Property Insurance</a></li>
+					            <li><a href="reinsurance.html">Reinsurance</a></li>
+					          </ul>
+					        </li>
+					        <li><a class="drop" href="attorneyProfiles.html">Attorney Profiles</a>
+					          <ul>
+					            <li><a class="drop-nested" href="partners.html">Partners</a>
+					              <ul>
+					                <li><a href="frankNicoletti.html">Frank M. Nicoletti</a></li>
+					                <li><a href="benjaminGonson.html">Benjamin N. Gonson</a></li>
+					                <li><a href="marinaSpinner.html">Marina A. Spinner</a></li>
+					                <li><a href="josephGulino.html">Joseph J. Gulino</a></li>
+					                <li><a href="kevinRyan.html">Kevin M. Ryan</a></li>
+					                <li><a href="kevinPinter.html">Kevin Pinter</a></li>
+					                <li><a href="garyGreenman.html">Gary R. Greenman</a></li>
+					                <li><a href="michaelBrown.html">Michael S. Brown</a></li>
+					                <li><a href="edwardBenson.html">Edward S. Benson</a></li>
+					                <li><a href="angelaLainhart.html">Angela A. Lainhart</a></li>
+					                <li><a href="lauraMattera.html">Laura M. Mattera</a></li>
+					              </ul>
+					            </li>
+					            <li><a class="drop-nested" href="associates.html">Associates</a>
+					              <ul>
+					                <li><a href="jasonGomes.html">Jason I. Gomes</a></li>
+					                <li><a href="kevinLocke.html">Kevin S. Locke</a></li>
+					                <li><a href="valerieRivera.html">Valerie Rivera</a></li>
+					                <li><a href="christineVetter.html">Christine Vetter</a></li>
+					                <li><a href="angieKhawly.html">Angie Khawly</a></li>
+					                <li><a href="michealKesselman.html">Michael Kesselman</a></li>
+					                <li><a href="costasCyprus.html">Costas Cyprus</a></li>
+					                <li><a href="craigLamster.html">Craig A. Lamster</a></li>
+					                <li><a href="sarahRocco.html">Sarah Rocco</a></li>
+					                <li><a href="matthewCorcoran.html">Matthew G. Corcoran</a></li>
+					                <li><a href="andrewKoenig.html">Andrew S. Koenig</a></li>
+					                <li><a href="nishiRajan.html">Nishi Rajan</a></li>
+					              </ul>
+					            </li>
+					          </ul>
+					        </li>
 							<li><a href="firmNews.html">Firm News</a></li>
 							<li><a href="contact.html">Contact Us</a></li>
 						</ul>
