@@ -145,8 +145,10 @@ nav ul, nav ol{margin:0; padding:0; list-style:none;}
   .fh5co-nav{}
   .fh5co-nav ul{display:none;}
   .fh5co-nav form{display:block;}
+  .container{}
 }
-
+*, *::before, *::after{transition:all .3s ease-in-out;}
+.fh5co-nav form *{transition:none !important;}
 .fh5co-nav .drop-nested{padding-left:15px;}
 .fh5co-nav li li a, .fh5co-nav li li .drop-nested{display:block; margin:0; padding:10px 15px;}
 .fh5co-nav .drop-nested::after, .fh5co-nav li li .drop-nested::after {

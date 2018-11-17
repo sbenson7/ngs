@@ -305,9 +305,6 @@
 
 	
 	$(function(){
-		mobileMenuOutsideClick();
-		offcanvasMenu();
-		burgerMenu();
 		contentWayPoint();
 		sliderMain();
 		dropdown();
@@ -323,3 +320,4 @@
 
 
 }());
+$('<form action="#"><select /></form>').appendTo(".fh5co-nav");$("<option />",{selected:"selected",value:"",text:"MENU"}).appendTo(".fh5co-nav select");$(".fh5co-nav a").each(function(){var e=$(this);if($(e).parents("ul ul ul").length>=1){$("<option />",{value:e.attr("href"),text:"- - - "+e.text()}).appendTo(".fh5co-nav select")}else if($(e).parents("ul ul").length>=1){$("<option />",{value:e.attr("href"),text:"- - "+e.text()}).appendTo(".fh5co-nav select")}else if($(e).parents("ul").length>=1){$("<option />",{value:e.attr("href"),text:""+e.text()}).appendTo(".fh5co-nav select")}else{$("<option />",{value:e.attr("href"),text:e.text()}).appendTo(".fh5co-nav select")}});$(".fh5co-nav select").change(function(){if($(this).find("option:selected").val()!=="#"){window.location=$(this).find("option:selected").val()}})
