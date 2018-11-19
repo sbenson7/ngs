@@ -85,6 +85,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .fh5co-nav .top-menu {
   padding: 28px 0;
+  background-color: #003366;
 }
 
 .fh5co-nav a {
@@ -132,9 +133,9 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-nav form select{width:100%; padding:5px; border:none;}
 .fh5co-nav form select option{margin:5px; padding:0; border:none;}
 .fh5co-nav  li a{color:inherit;}
-.fh5co-nav .active a, .fh5co-nav a:hover, .fh5co-nav li:hover > a{color:#003366; background-color:inherit;}
+.fh5co-nav .active a, .fh5co-nav a:hover, .fh5co-nav li:hover > a{color:#c6bb8e; background-color:inherit;}
 .fh5co-nav li li a, .fh5co-nav .active li a{color:#FFFFFF; background-color:rgba(0,0,0,.6); border-color:rgba(0,0,0,.6);}
-.fh5co-nav li li:hover > a, .fh5co-nav .active .active > a{color:#FFFFFF; background-color:#003366;}
+.fh5co-nav li li:hover > a, .fh5co-nav .active .active > a{color:#FFFFFF; background-color:#c6bb8e;}
 .fh5co-nav form select{color:#FFFFFF; background-color:#333335;}
 .fh5co-nav form *{transition:none !important;}
 nav ul, nav ol{margin:0; padding:0; list-style:none;}
