@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-nav{}
-.fh5co-nav ul{text-transform:uppercase; text-align:center;}
+.fh5co-nav ul{color:#FFFFFF;text-transform:uppercase; text-align:center;}
 .fh5co-nav ul ul{z-index:9999; position:absolute; width:160px; text-transform:none; text-align:left;}
 .fh5co-nav ul ul ul{left:160px; top:0;}
 .fh5co-nav li{display:inline-block; position:relative; margin:0 10px 0 0; padding:0;}
@@ -135,7 +135,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-nav  li a{color:inherit;}
 .fh5co-nav .active a, .fh5co-nav a:hover, .fh5co-nav li:hover > a{color:#c6bb8e; background-color:inherit;}
 .fh5co-nav li li a, .fh5co-nav .active li a{color:#FFFFFF; background-color:rgba(0,0,0,.6); border-color:rgba(0,0,0,.6);}
-.fh5co-nav li li:hover > a, .fh5co-nav .active .active > a{color:#FFFFFF; background-color:#c6bb8e;}
+.fh5co-nav li li:hover > a, .fh5co-nav .active .active > a{color:#FFFFFF; background-color:#bbad77;}
 .fh5co-nav form select{color:#FFFFFF; background-color:#333335;}
 .fh5co-nav form *{transition:none !important;}
 nav ul, nav ol{margin:0; padding:0; list-style:none;}
