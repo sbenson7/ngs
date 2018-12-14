@@ -231,7 +231,7 @@ nav ul, nav ol{margin:0; padding:0; list-style:none;}
 }
 
 .carousel-item {
-  height: 65vh;
+  height: 45vh;
   min-height: 300px;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
@@ -328,8 +328,8 @@ nav ul, nav ol{margin:0; padding:0; list-style:none;}
   margin-bottom: 30px;
 }
 .slider-text > .slider-text-inner .heading-section {
-  
-  margin-top: 5em;
+  margin-top: 3em;
+  text-shadow: 2px 3px 7px #5B5B5B;
 }
 #fh5co-hero .flexslider .slider-text > .slider-text-inner .btn {
   padding: 15px 30px;
