@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-nav .top-menu {
-  padding: 28px 0;
+  padding: 2em 0 1em 0;
   background-color: #003366;
 }
 
@@ -240,6 +240,26 @@ nav ul, nav ol{margin:0; padding:0; list-style:none;}
   background-size: cover;
 }
 
+.mobile-logo{display:none;}
+
+@media(max-width: 991px){
+  .logo{
+    display:block;
+  }
+  .mobile-logo{
+    display:none;
+  }
+}
+
+@media(max-width: 767px){
+  .logo {
+    display:none;
+  }
+  .mobile-logo{
+    display:block;
+    margin: 0 auto;
+  }
+}
 
 .scroll-down {
   margin: 0 auto;
