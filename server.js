@@ -34,7 +34,7 @@ app.post('/contactForm', function (req, res) {
     }
   });
   mailOpts = {
-    from: req.body.name + ' &lt;' + req.body.email + '&gt;',
+    from: req.body.fname + ' '  + req.body.lname + ' &lt;' + req.body.email + '&gt;',
     to: process.env.EMAIL,
     subject: req.body.subject,
     text: `${req.body.fname} ${req.body.lname} (${req.body.email}) says:\n${req.body.message}`
