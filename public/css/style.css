@@ -876,10 +876,7 @@ nav ul, nav ol{margin:0; padding:0; list-style:none;}
 .fh5co-staff img {
   width: 200px;
   margin-bottom: 20px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
+ 
 }
 .fh5co-staff h3 {
   font-size: 24px;
