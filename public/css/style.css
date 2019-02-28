@@ -245,7 +245,7 @@ h1, h2, h3, h4, h5, h6, figure {
           visibility: visible;
           opacity: 1; }
 
-.site-wrap:before {
+.page:before {
   -webkit-transition: .3s all ease-in-out;
   -o-transition: .3s all ease-in-out;
   transition: .3s all ease-in-out;
@@ -260,25 +260,22 @@ h1, h2, h3, h4, h5, h6, figure {
   opacity: 0;
   visibility: hidden; }
 
-.offcanvas-menu .site-wrap {
+.offcanvas-menu .page {
   position: absolute;
   height: 100%;
   width: 100%;
   z-index: 2;
   overflow: hidden; }
-  .offcanvas-menu .site-wrap:before {
+  .offcanvas-menu .page:before {
     opacity: 1;
     visibility: visible; }
 
 
 .site-mobile-menu {
-  width: 300px;
-  position: fixed;
-  right: 0;
+  width: 17rem;
   z-index: 2000;
-  padding-top: 20px;
-  background: #fff;
-  height: calc(100vh);
+  background: #003366;
+  height: auto;
   -webkit-transform: translateX(110%);
   -ms-transform: translateX(110%);
   transform: translateX(110%);
@@ -287,15 +284,27 @@ h1, h2, h3, h4, h5, h6, figure {
   -webkit-transition: .3s all ease-in-out;
   -o-transition: .3s all ease-in-out;
   transition: .3s all ease-in-out; }
+
+  .site-mobile-menu-body .hidden {
+    visibility: none;
+  }
+
+  .site-mobile-menu-body .hidden {
+    visibility: visible;
+  }
+
   .offcanvas-menu .site-mobile-menu {
     -webkit-transform: translateX(0%);
     -ms-transform: translateX(0%);
     transform: translateX(0%); }
   .site-mobile-menu .site-mobile-menu-header {
     width: 100%;
-    float: left;
+    float: right;
     padding-left: 20px;
-    padding-right: 20px; }
+    padding-right: 20px;
+    color: #ffffff;
+    }
+
     .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-close {
       float: right;
       margin-top: 8px; }
@@ -327,7 +336,7 @@ h1, h2, h3, h4, h5, h6, figure {
     -webkit-overflow-scrolling: touch;
     position: relative;
     padding: 0 20px 20px 20px;
-    height: calc(100vh - 52px);
+    height: auto;
     padding-bottom: 150px; }
   .site-mobile-menu .site-nav-wrap {
     padding: 0;

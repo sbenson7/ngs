@@ -88,36 +88,41 @@
 
 
 	var siteMenuClone = function() {
+		if ($(window).width() < 1000) {
 
-		$('.js-clone-nav').each(function() {
-			var $this = $(this);
-			$this.clone().attr('class', 'site-nav-wrap').appendTo('.site-mobile-menu-body');
-		});
+			$('.js-clone-nav').each(function() {
+				var $this = $(this);
+				$this.clone().attr('class', 'site-nav-wrap').appendTo('.site-mobile-menu-body');
+			});
 
 
-		setTimeout(function() {
-			
-			var counter = 0;
-      $('.site-mobile-menu .has-children').each(function(){
-        var $this = $(this);
-        
-        $this.prepend('<span class="arrow-collapse collapsed">');
+			setTimeout(function() {
+				
+				var counter = 0;
+	      $('.site-mobile-menu .has-children').each(function(){
+	        var $this = $(this);
+	        
+	        $this.prepend('<span class="arrow-collapse collapsed">');
 
-        $this.find('.arrow-collapse').attr({
-          'data-toggle' : 'collapse',
-          'data-target' : '#collapseItem' + counter,
-        });
+	        $this.find('.arrow-collapse').attr({
+	          'data-toggle' : 'collapse',
+	          'data-target' : '#collapseItem' + counter,
+	        });
 
-        $this.find('> ul').attr({
-          'class' : 'collapse',
-          'id' : 'collapseItem' + counter,
-        });
+	        $this.find('> ul').attr({
+	          'class' : 'collapse',
+	          'id' : 'collapseItem' + counter,
+	        });
 
-        counter++;
+	        counter++;
 
-      });
+	      });
 
-    }, 1000);
+	    }, 1000);
+			$('.site-menu').hide();
+	} else {
+		$('.site-mobile-menu').hide();
+	}
 
 		$('body').on('click', '.arrow-collapse', function(e) {
       var $this = $(this);
@@ -145,12 +150,14 @@
 			var $this = $(this);
 			e.preventDefault();
 
-			if ( $('body').hasClass('offcanvas-menu') ) {
-				$('body').removeClass('offcanvas-menu');
-				$this.removeClass('active');
-			} else {
+			if ( $('.site-mobile-menu-body').hasClass('hidden')) {
 				$('body').addClass('offcanvas-menu');
 				$this.addClass('active');
+				$('.site-mobile-menu-body').removeClass('hidden');
+			} else {
+				$('body').removeClass('offcanvas-menu');
+				$this.removeClass('active');
+				$('.site-mobile-menu-body').addClass('hidden');
 			}
 		}) 
 
