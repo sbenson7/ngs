@@ -272,7 +272,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 
 .site-mobile-menu {
-  width: 17rem;
+  width: 21rem;
   z-index: 2000;
   background: #003366;
   height: auto;
@@ -294,19 +294,22 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 
   .offcanvas-menu .site-mobile-menu {
-    -webkit-transform: translateX(0%);
-    -ms-transform: translateX(0%);
-    transform: translateX(0%); }
+    -webkit-transform: translateX(70%);
+    -ms-transform: translateX(70%);
+    transform: translateX(70%); }
   .site-mobile-menu .site-mobile-menu-header {
     width: 100%;
-    float: right;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 10rem;
     color: #ffffff;
     }
+    .offcanvas-menu .site-mobile-menu .site-mobile-menu-header {
+      width: 100%;
+      padding-right: 3rem;
+      color: #ffffff;
+      }
+
 
     .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-close {
-      float: right;
       margin-top: 8px; }
       .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-close span {
         font-size: 30px;
@@ -367,6 +370,10 @@ h1, h2, h3, h4, h5, h6, figure {
       border-radius: 50%; }
       .site-mobile-menu .site-nav-wrap .arrow-collapse:hover {
         background: #ffff; }
+      .arrow-collapse.active:before {
+        font-family: "Font Awesome 5 Free";
+        content:"▲";
+      }
       .site-mobile-menu .site-nav-wrap .arrow-collapse:before {
         font-size: 12px;
         z-index: 20;
@@ -382,6 +389,7 @@ h1, h2, h3, h4, h5, h6, figure {
         -o-transition: .3s all ease;
         transition: .3s all ease; }
       .site-mobile-menu .site-nav-wrap .arrow-collapse.collapsed:before {
+        content:"▼";
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%); }
