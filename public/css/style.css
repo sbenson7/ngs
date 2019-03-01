@@ -113,7 +113,8 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .site-navbar {
   margin-bottom: 0px;
-  z-index: 1999;
+  z-index: 1000;
+  padding: 1rem;
   position: relative;
   background-color: #003366;}
   .site-navbar.transparent {
@@ -272,7 +273,10 @@ h1, h2, h3, h4, h5, h6, figure {
 
 
 .site-mobile-menu {
-  width: 21rem;
+  width: 25rem;
+  position: absolute;
+  right: 10rem;
+  top: 0;
   z-index: 2000;
   background: #003366;
   height: auto;
@@ -294,9 +298,9 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 
   .offcanvas-menu .site-mobile-menu {
-    -webkit-transform: translateX(70%);
-    -ms-transform: translateX(70%);
-    transform: translateX(70%); }
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%); }
   .site-mobile-menu .site-mobile-menu-header {
     width: 100%;
     padding-right: 10rem;
@@ -601,7 +605,6 @@ nav ul, nav ol{margin:0; padding:0; list-style:none;}
   }
   .mobile-logo{
     display:block;
-    margin: 0 auto;
   }
 }
 
