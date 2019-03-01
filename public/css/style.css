@@ -289,6 +289,7 @@ h1, h2, h3, h4, h5, h6, figure {
   -o-transition: .3s all ease-in-out;
   transition: .3s all ease-in-out; }
 
+
   .site-mobile-menu-body .hidden {
     visibility: none;
   }
@@ -306,6 +307,7 @@ h1, h2, h3, h4, h5, h6, figure {
     padding-right: 10rem;
     color: #ffffff;
     }
+
     .offcanvas-menu .site-mobile-menu .site-mobile-menu-header {
       width: 100%;
       padding-right: 3rem;
