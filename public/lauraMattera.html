@@ -75,39 +75,49 @@
   <div class="fh5co-loader"></div>
   
   <div id="page">
-  <nav class="fh5co-nav" role="navigation">
-		<div class="top-menu">
-			<div class="container-fluid">
-				<div class="row">
+  <header class="site-navbar py-1" role="banner">
+		  	<div class="container-fluid">
+		  	  <div class="row">
+		  	  	<div class="col-md-1"></div>
+		  	  	<div class="col-md-2">
+					<a href="index.html"><img class='logo' src="images/ngslogo.png" alt="Nicoletti Gonson Spinner logo"></a>
+					<a href="index.html"><img class='mobile-logo' src="images/ngslogosmall.png" alt="Nicoletti Gonson Spinner logo"></a>
+					<div class="site-mobile-menu">
+						  <div class="site-mobile-menu-header">
+						    <div class="site-mobile-menu-close mt-3">
+						      <span class="js-menu-toggle"><i class="fas fa-bars"></i></span>
+						    </div>
+						  </div>
+						  <div class="site-mobile-menu-body hidden"></div>
+						</div>
+				</div>
+				
 					<div class="col-md-1"></div>
-					<div class="col-md-2">
-						<a href="index.html"><img class='logo' src="images/ngslogo.png" alt="Nicoletti Gonson Spinner logo"></a>
-            <a href="index.html"><img class='mobile-logo' src="images/ngslogosmall.png" alt="Nicoletti Gonson Spinner logo"></a>
-					</div>
-					<div class="col-md-1"></div>
-					<div class="col-md-8 text-right menu-1">
-						<ul>
-							<li><a href="index.html">Home</a></li>
+					<div class="col-10 col-md-8 d-none d-xl-block">
+
+					  <nav class="site-navigation position-relative text-right" role="navigation">
+					    <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
+							<li class="active"><a href="index.html">Home</a></li>
 							<li><a href="firmOverview.html">Firm Overview</a></li>
-					        <li><a class="drop" href="practice.html">Practice Areas</a>
-					          <ul>
-                      <li><a href="ada.html">Americans With Disabilities Act</a></li>
+					        <li class="has-children"><a href="practice.html">Practice Areas</a>
+					          <ul class="dropdown">
 					            <li><a href="construction.html">Construction</a></li>
+					            <li><a href="premisesLiability.html">General Liabitity</a></li>
 					            <li><a href="insuranceCoverage.html">Insurance Coverage</a></li>
-					            <li><a href="massTortEnvironmental.html">Mass Tort & Environmental Claims</a></li>
-					            <li><a href="medicalMalpractice.html">Medical Malpractice</a></li>
-					            <li><a href="premisesLiability.html">Premises Liabitity</a></li>
+					            <li><a href="propertyInsurace.html">Property Insurance</a></li>
+					            <li><a href="truckingAndAutoAccidents.html">Trucking & Auto Accidents</a></li>
+					            <li><a href="reinsurance.html">Reinsurance</a></li>
 					            <li><a href="productsLiability.html">Product Liability</a></li>
 					            <li><a href="professionalIndemnity.html">Professional Indemnity</a></li>
-					            <li><a href="propertyInsurace.html">Property Insurance</a></li>
-					            <li><a href="reinsurance.html">Reinsurance</a></li>
-					            <li><a href="truckingAndAutoAccidents.html">Trucking & Auto Accidents</a></li>
+					            <li><a href="medicalMalpractice.html">Medical Malpractice</a></li>
+					            <li><a href="massTortEnvironmental.html">Mass Tort & Environmental Claims</a></li>
+					            <li><a href="ada.html">Americans With Disabilities Act</a></li>
 					          </ul>
 					        </li>
-					        <li class="active"><a class="drop" href="attorneyProfiles.html">Attorney Profiles</a>
-					          <ul>
-					            <li><a class="drop-nested" href="partners.html">Partners</a>
-					              <ul>
+					        <li class="has-children"><a href="attorneyProfiles.html">Attorney Profiles</a>
+					          <ul class="dropdown">
+					            <li class="has-children"><a href="partners.html">Partners</a>
+					              <ul class="dropdown">
 					                <li><a href="frankNicoletti.html">Frank M. Nicoletti</a></li>
 					                <li><a href="benjaminGonson.html">Benjamin N. Gonson</a></li>
 					                <li><a href="marinaSpinner.html">Marina A. Spinner</a></li>
@@ -118,11 +128,11 @@
 					                <li><a href="edwardBenson.html">Edward S. Benson</a></li>
 					                <li><a href="angelaLainhart.html">Angela A. Lainhart</a></li>
 					                <li><a href="lauraMattera.html">Laura M. Mattera</a></li>
-                          <li><a href="jamiePacker.html">Jamie T. Packer</a></li>
+                          			<li><a href="jamiePacker.html">Jamie T. Packer</a></li>
 					              </ul>
 					            </li>
-					            <li><a class="drop-nested" href="associates.html">Associates</a>
-					              <ul>
+					            <li class='has-children'><a href="associates.html">Associates</a>
+					              <ul class="dropdown">
 					                <li><a href="jasonGomes.html">Jason I. Gomes</a></li>
 					                <li><a href="kevinLocke.html">Kevin S. Locke</a></li>
 					                <li><a href="valerieRivera.html">Valerie Rivera</a></li>
@@ -138,17 +148,18 @@
                           			<li><a href="dannyEssadiq.html">Danny Essadiq</a></li>
                           			<li><a href="antigoneTzakis.html">Antigone Tzakis</a></li>
                           			<li><a href="cynthiaHung.html">Cynthia Hung</a></li>
+                          			<li><a href="gregoryCarrubba.html">Gregory J. Carrubba</a></li>
 					              </ul>
 					            </li>
-					            <li><a class="drop-nested" href="ofcounsel.html">Of Counsel</a>
-					              <ul>
+					            <li class='has-children'><a href="ofcounsel.html">Of Counsel</a>
+					              <ul class="dropdown">
 					              	<li><a href="garyGreenman.html">Gary Greenman</a></li>
 					              </ul>
 					            </li>
 					          </ul>
 					        </li>
-							<li><a href="firmNews.html">Firm News</a>
-					          <ul>
+							<li class='has-children'><a href="firmNews.html">Firm News</a>
+					          <ul class="dropdown">
 					            <li><a href="appellate.html">Appellate Decisions</a></li>
 					            <li><a href="arbitrations.html">Arbitrations</a></li>
 					            <li><a href="published_articles.html">Published Aricles</a></li>
@@ -157,11 +168,11 @@
 					        </li>
 							<li><a href="contact.html">Contact Us</a></li>
 						</ul>
+						</nav>
 					</div>
 				</div>
 			</div>
-		</div>
-	</nav>
+		</header>
 
   <div id="fh5co-blog" class="fh5co-bg-section">
     <div class="container">
@@ -193,7 +204,7 @@
             <div class="col-lg-12 col-md-12">
               <div class="fh5co-blog animate-box">
                 <div class="blog-text">
-                  <p><b>Laura Mattera</b> is an experienced trial attorney and her practice encompasses various areas of defense litigation, including labor law, construction defects, insurance coverage, and premises liability.</p>
+                  <p><b>Laura Mattera</b> is an experienced trial attorney and her practice encompasses various areas of defense litigation, including labor law, construction defects, insurance coverage, and General Liability.</p>
                 </div> 
               </div>
             </div>
