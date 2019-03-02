@@ -363,6 +363,12 @@ nav ul, nav ol{margin:0; padding:0; list-style:none;}
   min-height: 700px;
   z-index: 9;
 }
+@media(max-width: 991px){
+  #fh5co-hero .flexslider .slider-text {
+    width: 100%;
+  }
+}
+
 .flexslider .slider-text > .slider-text-inner {
   display: table-cell;
   vertical-align: middle;
