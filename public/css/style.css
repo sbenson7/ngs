@@ -801,10 +801,9 @@ nav ul, nav ol{margin:0; padding:0; list-style:none;}
   #fh5co-blog,
   #fh5co-contact,
   #fh5co-footer {
-    padding: 3em 0;
+    padding: 1.5em 0;
   }
 }
-
 #fh5co-counter {
   padding: 4em 0;
   clear: both;
