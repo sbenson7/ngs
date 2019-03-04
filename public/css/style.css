@@ -111,6 +111,18 @@ h1, h2, h3, h4, h5, h6, figure {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
 }
+@supports (-ms-ime-align: auto) {
+  .site-navbar {
+      color: white !important;
+  }
+  .site-navbar a {
+      color: white !important;
+  }
+  .site-navbar a:visited {
+      color: white !important;
+  }
+}
+
 .site-navbar {
   margin-bottom: 0px;
   z-index: 1000;
