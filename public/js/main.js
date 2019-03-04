@@ -25,6 +25,28 @@
 		}
 	};
 
+var resizeNavbar = function() {
+	if ($(window).width() < 1500) {
+		$('.site-menu').hide();
+		$('.site-mobile-menu').show();
+		$('.site-mobile-menu').parent().removeClass('col-md-2')
+	} else {
+		$('.site-mobile-menu').parent().addClass('col-md-2')
+		$('.site-mobile-menu').hide();
+		$('.site-menu').show();
+	}
+
+		var $this = $(this),
+			w = $this.width();
+
+		if ( w > 768 ) {
+			if ( $('body').hasClass('offcanvas-menu') ) {
+				$('body').removeClass('offcanvas-menu');
+			}
+		}
+}
+
+
 	var mobileMenuOutsideClick = function() {
 
 		$(document).click(function (e) {
@@ -92,7 +114,6 @@
 				var $this = $(this);
 				$this.clone().attr('class', 'site-nav-wrap').appendTo('.site-mobile-menu-body');
 			});
-
 
 			setTimeout(function() {
 				
@@ -383,6 +404,7 @@
 		contentWayPoint();
 		sliderMain();
 		siteMenuClone();
+		resizeNavbar();
 		accordian();
 		//dropdown();
 		//nestedDropdown();
@@ -399,23 +421,7 @@
 
 }());
 $('<form action="#"><select /></form>').appendTo(".fh5co-nav");$("<option />",{selected:"selected",value:"",text:"MENU"}).appendTo(".fh5co-nav select");$(".fh5co-nav a").each(function(){var e=$(this);if($(e).parents("ul ul ul").length>=1){$("<option />",{value:e.attr("href"),text:"- - - "+e.text()}).appendTo(".fh5co-nav select")}else if($(e).parents("ul ul").length>=1){$("<option />",{value:e.attr("href"),text:"- - "+e.text()}).appendTo(".fh5co-nav select")}else if($(e).parents("ul").length>=1){$("<option />",{value:e.attr("href"),text:""+e.text()}).appendTo(".fh5co-nav select")}else{$("<option />",{value:e.attr("href"),text:e.text()}).appendTo(".fh5co-nav select")}});$(".fh5co-nav select").change(function(){if($(this).find("option:selected").val()!=="#"){window.location=$(this).find("option:selected").val()}})
+
 $(window).resize(function() {
-		if ($(window).width() < 1500) {
-			$('.site-menu').hide();
-			$('.site-mobile-menu').show();
-			$('.site-mobile-menu').parent().removeClass('col-md-2')
-		} else {
-			$('.site-mobile-menu').parent().addClass('col-md-2')
-			$('.site-mobile-menu').hide();
-			$('.site-menu').show();
-		}
-
-			var $this = $(this),
-				w = $this.width();
-
-			if ( w > 768 ) {
-				if ( $('body').hasClass('offcanvas-menu') ) {
-					$('body').removeClass('offcanvas-menu');
-				}
-			}
-		})
+	resizeNavbar()	
+})
